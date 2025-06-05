@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tong's Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    #game-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    #tong {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #00796b;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin: 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <h1>Welcome to Tong's Game!</h1>
+    < img id="tong" src="tong.png" alt="Tong character" />
+    <div>
+      <button class="btn" id="feedBtn">Feed</button>
+      <button class="btn" id="dressUpBtn">Dress Up</button>
+      <button class="btn" id="travelBtn">Travel</button>
+      <button class="btn" id="photoBtn">Photo</button>
+    </div>
+    <p>More features coming soon...</p >
+  </div>
+  <script>
+    // 这里可以添加按钮的功能代码
+    document.getElementById('feedBtn').onclick = () => alert('Feed action coming soon!');
+    document.getElementById('dressUpBtn').onclick = () => alert('Dress Up action coming soon!');
+    document.getElementById('travelBtn').onclick = () => alert('Travel action coming soon!');
+    document.getElementById('photoBtn').onclick = () => alert('Photo action coming soon!');
+  </script>
+</body>
+</html>
